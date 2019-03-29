@@ -60,6 +60,6 @@
 
 //EAT IT. DONE WITH YOU, YA DANG FETCH FUNCTION.
 
-//I will add a fetch images function later. Let's get the rest of the app working first.
+//I will add a fetch images function later. Let's get the rest of the app working first. Next step is create a file for my custom cell. Then a file for my view controller. Don't forget the viewController is a Swift file with a bridging header.
 
 @end

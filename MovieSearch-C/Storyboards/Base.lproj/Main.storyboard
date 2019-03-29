@@ -12,7 +12,7 @@
         <!--Movies-->
         <scene sceneID="RA1-qu-hVz">
             <objects>
-                <tableViewController id="hQk-jg-Qzo" sceneMemberID="viewController">
+                <tableViewController id="hQk-jg-Qzo" customClass="MovieListTableViewController" customModule="MovieSearch_C" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="nd1-jr-bjC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,7 +23,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="Jdi-ht-5h8">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieCell" rowHeight="120" id="Jdi-ht-5h8" customClass="RUNMovieTableViewCell">
                                 <rect key="frame" x="0.0" y="72" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jdi-ht-5h8" id="Srj-LV-ibk">
@@ -70,6 +70,12 @@
                                         <constraint firstAttribute="bottom" secondItem="bPf-0l-dAb" secondAttribute="bottom" id="Zn1-gL-asy"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="movieOverviewTextView" destination="Wau-X5-QXc" id="jYb-4d-OV4"/>
+                                    <outlet property="moviePosterImageView" destination="bPf-0l-dAb" id="BQC-cJ-9cn"/>
+                                    <outlet property="movieRatingLabel" destination="aKX-ks-5Sc" id="gTB-6p-WeG"/>
+                                    <outlet property="movieTitleLabel" destination="dJG-bG-maL" id="ybe-j3-sfh"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -78,6 +84,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Movies" id="Bno-3F-O3F"/>
+                    <connections>
+                        <outlet property="movieSearchBar" destination="xY0-CQ-p86" id="UKZ-cb-wRj"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rED-u6-UQo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
