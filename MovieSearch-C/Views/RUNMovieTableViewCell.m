@@ -19,8 +19,24 @@
     self.movieRatingLabel.text = ratingString;
     self.movieOverviewTextView.text = movie.overview;
     //Add stuff here for the image.
+    [self setMoviePoster:movie];
 }
 
-//I will need a setImage function, as well as a prepare for reuse. Maybe.
+-(void)setMoviePoster:(RUNMovie *)movie
+{
+    if (movie.poster_path){
+        [RUNMovieClient fetchMovieImageWithImagePath:movie completion:^(NSData * _Nullable imagePath) {
+            UIImage *movieImage = [UIImage imageWithData:imagePath];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                self.moviePosterImageView.image = movieImage;
+            });
+        }];
+    }else {
+        NSLog(@"NO IMAGE WOOT WOOT");
+    }
+}
+
+
+//I will need a setImage function. As well as a prepare for reuse. Maybe.
 
 @end
