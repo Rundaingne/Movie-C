@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 //I need an initializer, or probably two. But I also need a codingKey for the rating, corresponding to @"vote_average". Looks like that will be done in the .m file though. Let's do the initializer then. Don't forget that it's of instancetype, not void.
 
--(instancetype)initWithTitle:(NSString *)title rating:(NSNumber *)rating overview:(NSString *)overview;
+//-(instancetype)initWithTitle:(NSString *)title rating:(NSNumber *)rating overview:(NSString *)overview;
 
 //Also of note, is that this API json structure looks identical to the swapi. I can initialize a dictionary very similarly.
 
