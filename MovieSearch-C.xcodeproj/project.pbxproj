@@ -13,6 +13,7 @@
 		F7583BBD224E6C2400EC659A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7583BBB224E6C2400EC659A /* LaunchScreen.storyboard */; };
 		F7583BC0224E6C2400EC659A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7583BBF224E6C2400EC659A /* main.m */; };
 		F7DF221F224E6FA00074E6E2 /* RUNMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DF221E224E6FA00074E6E2 /* RUNMovie.m */; };
+		F7DF2222224E73DB0074E6E2 /* RUNMovieClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DF2221224E73DB0074E6E2 /* RUNMovieClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		F7583BBF224E6C2400EC659A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F7DF221D224E6FA00074E6E2 /* RUNMovie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RUNMovie.h; sourceTree = "<group>"; };
 		F7DF221E224E6FA00074E6E2 /* RUNMovie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RUNMovie.m; sourceTree = "<group>"; };
+		F7DF2220224E73DB0074E6E2 /* RUNMovieClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RUNMovieClient.h; sourceTree = "<group>"; };
+		F7DF2221224E73DB0074E6E2 /* RUNMovieClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RUNMovieClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 		F7583BC9224E6C9600EC659A /* Network Client */ = {
 			isa = PBXGroup;
 			children = (
+				F7DF2220224E73DB0074E6E2 /* RUNMovieClient.h */,
+				F7DF2221224E73DB0074E6E2 /* RUNMovieClient.m */,
 			);
 			path = "Network Client";
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 				F7DF221F224E6FA00074E6E2 /* RUNMovie.m in Sources */,
 				F7583BC0224E6C2400EC659A /* main.m in Sources */,
 				F7583BB2224E6C2200EC659A /* AppDelegate.m in Sources */,
+				F7DF2222224E73DB0074E6E2 /* RUNMovieClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
